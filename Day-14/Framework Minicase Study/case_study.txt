@@ -1,0 +1,34 @@
+Requirement: 
+a) Automatically classify each email into a category
+b) Retrieve relevant policy documents to generate a draft reply 
+c) Escalate complex cases to a human agent via a ticketing API.
+
+Framework Chosen:
+
+LangChain + LlamaIndex (Hybrid Approach)
+
+LangChain for orchestration, classification, routing, and API/tool integration.
+LlamaIndex for efficient document indexing and retrieval (RAG) from policy documents.
+
+Step 1:
+
+Receive customer email and use an LLM classifier (via LangChain) to categorize it (delivery issue, billing, complaint, tracking, etc.).
+
+Step 2:
+
+Query policy/SOP documents using LlamaIndex RAG pipeline to retrieve the most relevant company policies and procedures.
+
+Step 3:
+
+Provide retrieved context to the LLM and generate a draft response for the customer.
+
+Step 4:
+
+If confidence is low or the issue is complex/high-priority, invoke the ticketing API through a LangChain tool and escalate to a human agent.
+
+Justification:
+1) LangChain is best suited for agent orchestration, workflow management, tool calling, and API integrations.
+2) LlamaIndex specializes in document indexing and retrieval, making RAG implementation easier and more accurate.
+3) The combination supports high-volume processing (10,000 emails/day), automated response generation, and human-in-the-loop escalation.
+4) Better fit than Haystack because the requirement includes both retrieval and agent/tool orchestration, not just search.
+
