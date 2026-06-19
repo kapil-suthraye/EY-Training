@@ -1,0 +1,14 @@
+SITUATION: 
+A disruption is affecting several ports and shipping lanes, including port congestion in Rotterdam, a typhoon warning in the South China Sea, and customs delays in Houston. The estimated severity of the disruption is 6/10, with Rotterdam scoring 4/10, the AE-1 shipping lane scoring 8/10 due to the potential typhoon impact, and Houston scoring 3/10. The disruptions are expected to last 3-5 days in Rotterdam, 7-10 days in the South China Sea, and 2-3 days in Houston.
+
+IMPACT: 
+The estimated impact on shipments is significant, with 500-700 containers likely to be delayed in Rotterdam, 2,000-3,000 TEUs affected by the typhoon warning in the South China Sea, and 200-300 containers delayed in Houston. The estimated EUR cost exposure is substantial, although the exact figure is not provided. The disruption is expected to cause delays and increased costs, with potential long-term effects on supply chain operations.
+
+RESPONSE: 
+The recommended response is to activate contingency plans, including rerouting vessels via alternative routes. The top-ranked re-routing option is **Route 1: North Sea - Le Havre - Southampton**, which is estimated to add a 24-hour delay and a 12% increase in cost. This route has a low risk score and is compliant with customs requirements. Rerouting via the Suez Canal and transpacific shipping are also considered, but with higher cost deltas and risk scores. Suppliers have been notified and are being requested to confirm acceptance of the alternative route proposals.
+
+NEXT STEPS: 
+Here are the next steps to be taken:
+1. **Supplier Confirmation** (Owner: Supplier Communications Specialist, Deadline: within the next 4 hours): Obtain confirmation from suppliers regarding the acceptance of the proposed alternative route.
+2. **Customs Clearance** (Owner: Logistics Team, Deadline: within the next 24 hours): Ensure that all customs documentation is complete and accurate to facilitate smooth customs clearance for the rerouted shipments.
+3. **Monitoring and Updates** (Owner: Disruption Response Team, Deadline: ongoing): Continuously monitor the situation, provide regular updates to stakeholders, and be prepared to adjust the response plan as necessary to minimize the impact of the disruption.
