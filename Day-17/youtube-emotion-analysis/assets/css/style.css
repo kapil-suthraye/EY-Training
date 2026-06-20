@@ -1,0 +1,38 @@
+.stApp{
+    background-color:#FFF8EE;
+}
+
+.hero{
+    background:
+    linear-gradient(
+        90deg,
+        #64E3D8,
+        #5AC8FA
+    );
+
+    padding:30px;
+
+    border-radius:20px;
+}
+
+.metric-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    box-shadow:
+    0px 2px 10px
+    rgba(0,0,0,.08);
+}
+
+.stButton button{
+
+    background:#64E3D8;
+
+    color:black;
+
+    border-radius:12px;
+}
