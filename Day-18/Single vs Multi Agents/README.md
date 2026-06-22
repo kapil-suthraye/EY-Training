@@ -9,13 +9,13 @@ Scenerio itself highlights 4 distinct domains, Sequential with gates and Differe
 ## Block Diagram :
 
 CT Scan
-   ↓
+   |
 Radiology Agent
-   ↓
+   |
 Clinical Review Agent
-   ↓
+   |
 Scheduling Agent
-   ↓
+   |
 Patient Communication Agent
 
 # Personalized Product Recommendation Email
@@ -29,13 +29,13 @@ The same user data flows through every step, and there are no independent domain
 
 ## Block Diagram 
 User Context
-     ↓
+     |
 Recommendation Tool
-     ↓
+     |
 Business Rules
-     ↓
+     |
 Copy Generation
-     ↓
+     |
 Email Assembly
 
 A single orchestrating agent can invoke all these tools sequentially.
@@ -51,20 +51,20 @@ Process hundreds of documents sequentially or with limited orchestration.
 Struggle to efficiently coordinate extraction, comparison, and synthesis.
 Become a bottleneck when scaling to hundreds of contracts.
 
-##Block Diagram :
+## Block Diagram :
                     Contract 1 ──► Extractor Agent
                     Contract 2 ──► Extractor Agent
                     Contract 3 ──► Extractor Agent
                            ...
                     Contract 800 ─► Extractor Agent
                                    │
-                                   ▼
+                                   
                       Cross-Contract Analysis Agent
                                    │
-                                   ▼
+                                   
                         Regulatory Review Agent
                                    │
-                                   ▼
+                                   
                          Executive Summary Agent
 						 
 # Indicate Triage and Auto-Remediation
