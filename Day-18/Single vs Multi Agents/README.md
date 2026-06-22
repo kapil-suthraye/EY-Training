@@ -8,15 +8,13 @@ Scenerio itself highlights 4 distinct domains, Sequential with gates and Differe
 
 ## Block Diagram :
 
-CT Scan
-   |
-Radiology Agent
-   |
-Clinical Review Agent
-   |
-Scheduling Agent
-   |
-Patient Communication Agent
+```mermaid
+flowchart TD
+    A[CT Scan] --> B[Radiology Agent]
+    B --> C[Clinical Review Agent]
+    C --> D[Scheduling Agent]
+    D --> E[Patient Communication Agent]
+```
 
 # Personalized Product Recommendation Email
 
