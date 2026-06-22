@@ -26,15 +26,19 @@ Generate a recommendation email for a user.
 The same user data flows through every step, and there are no independent domains making separate decisions.
 
 ## Block Diagram 
-User Context
-     |
-Recommendation Tool
-     |
-Business Rules
-     |
-Copy Generation
-     |
-Email Assembly
+```mermaid
+flowchart TD
+    A[User Purchase & Browse History]
+    B[Recommendation Engine]
+    C[Business Rules]
+    D[Copy Generation]
+    E[Email Assembly]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
 
 A single orchestrating agent can invoke all these tools sequentially.
 
@@ -50,20 +54,19 @@ Struggle to efficiently coordinate extraction, comparison, and synthesis.
 Become a bottleneck when scaling to hundreds of contracts.
 
 ## Block Diagram :
-                    Contract 1 ──► Extractor Agent
-                    Contract 2 ──► Extractor Agent
-                    Contract 3 ──► Extractor Agent
-                           ...
-                    Contract 800 ─► Extractor Agent
-                                   │
-                                   
-                      Cross-Contract Analysis Agent
-                                   │
-                                   
-                        Regulatory Review Agent
-                                   │
-                                   
-                         Executive Summary Agent
+```mermaid
+flowchart TD
+    A[800 Contracts]
+    B[Contract Extraction Agents]
+    C[Cross-Document Analysis Agent]
+    D[Risk Assessment Agent]
+    E[Executive Summary Agent]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
 						 
 # Indicate Triage and Auto-Remediation
 
@@ -77,26 +80,21 @@ Human-in-the-loop gate.
 Different tool surfaces.
 
 ## Block Diagram :
-Incident Alert
-      │
-      ▼
- ┌─────────────┬─────────────┬─────────────┐
- │ Monitoring  │ Deployment  │ Database    │
- │ Agent       │ Agent       │ Agent       │
- └─────────────┴─────────────┴─────────────┘
-              │
-              ▼
-      Decision Agent
-              │
-     Confidence Check
-              │
-      Human Approval?
-              │
-              ▼
-      Remediation Agent
-              │
-              ▼
-        RCA Agent
+```mermaid
+flowchart TD
+    A[Incident Alert]
+
+    A --> B[Monitoring Agent]
+    A --> C[Deployment Analysis Agent]
+    A --> D[Database Analysis Agent]
+
+    B --> E[Decision Agent]
+    C --> E
+    D --> E
+
+    E --> F[Remediation Agent]
+    F --> G[RCA Agent]
+```
 		
 		
 # Summary 
